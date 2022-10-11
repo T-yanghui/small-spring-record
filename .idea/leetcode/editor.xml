@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="/tmp/leetcode/editor/cn/[1306]跳跃游戏 III.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[1306]跳跃游戏 III.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1306" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[1306]跳跃游戏 III.java" />
+              <option name="titleSlug" value="jump-game-iii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[865]具有所有最深节点的最小子树.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[865]具有所有最深节点的最小子树.md" />
+              <option name="frontendQuestionId" value="leetcode.cn865" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[865]具有所有最深节点的最小子树.java" />
+              <option name="titleSlug" value="smallest-subtree-with-all-the-deepest-nodes" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
