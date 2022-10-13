@@ -17,3 +17,7 @@
 ## DAY-4 完成bean简单的属性注入
 
 选择无参构造器，初始化完成后，直接利用反射对对象属性赋值
+
+## DAY_5 完成XML配置文件读取
+
+主要实现XMLbeanDefinitionReader和ResourceLoader
