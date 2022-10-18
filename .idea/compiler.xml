@@ -10,6 +10,7 @@
         <module name="DAY1" />
         <module name="DAY5" />
         <module name="DAY4" />
+        <module name="DAY5 (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,7 +19,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="DAY5" options="--add-modules java.xml" />
+      <module name="DAY5" options="" />
     </option>
   </component>
 </project>
