@@ -8,9 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="DAY2" />
         <module name="DAY1" />
+        <module name="DAY7" />
+        <module name="DAY6" />
         <module name="DAY5" />
         <module name="DAY4" />
-        <module name="DAY5 (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="DAY5" options="" />
+      <module name="DAY6" options="" />
+      <module name="DAY7" options="--add-modules java.xml" />
     </option>
   </component>
 </project>

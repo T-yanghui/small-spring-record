@@ -5,6 +5,7 @@ import org.example.beans.BeansException;
 import org.example.beans.PropertyValue;
 import org.example.beans.factory.config.AutowireCapableBeanFactory;
 import org.example.beans.factory.config.BeanDefinition;
+import org.example.beans.factory.config.BeanPostProcessor;
 import org.example.beans.factory.config.BeanReference;
 
 import java.lang.reflect.Constructor;
@@ -81,7 +82,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
         invokeInitMethods(beanName, wrappedBean, beanDefinition);
         //3. 后置处理
         wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);
-        return bean;
+        return wrappedBean;
     }
 
     private void invokeInitMethods(String beanName, Object wrappedBean, BeanDefinition beanDefinition) {
@@ -90,11 +91,23 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
     @Override
     public Object applyBeanPostProcessorsBeforeInitialization(Object existingBean, String beanName) throws BeansException {
-        return null;
+        Object result = existingBean;
+        for (BeanPostProcessor beanPostProcessor : getBeanPostProcessors()) {
+            Object current = beanPostProcessor.postProcessorBeforeInitialization(result, beanName);
+            if (null == current) return result;
+            result = current;
+        }
+        return result;
     }
 
     @Override
     public Object applyBeanPostProcessorsAfterInitialization(Object existingBean, String beanName) throws BeansException {
-        return null;
+        Object result = existingBean;
+        for (BeanPostProcessor beanPostProcessor : getBeanPostProcessors()) {
+            Object current = beanPostProcessor.postProcessorAfterInitialization(result, beanName);
+            if (null == current) return result;
+            result = current;
+        }
+        return result;
     }
 }

@@ -21,3 +21,11 @@
 ## DAY_5 完成XML配置文件读取
 
 主要实现XMLbeanDefinitionReader和ResourceLoader
+
+## DYA_6 完成ApplicationContext refresh部分
+
+主要创建了refresh的模板，完成BeanFactoryPostProcessor和BeanPostProcessor两个接口的实现
+
+## DAY_7 完成init method方法和销毁的钩子函数
+
+主要是添加init-method 和 destroy-method的实现

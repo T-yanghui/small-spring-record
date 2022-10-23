@@ -5,6 +5,8 @@
 
     <bean id="userService" class="org.example.beans.factory.support.bean.UserService">
         <property name="uId" value="2"/>
+        <property name="company" value="4399"/>
+        <property name="location" value="深圳"/>
         <property name="userDao" ref="userDao"/>
     </bean>
 

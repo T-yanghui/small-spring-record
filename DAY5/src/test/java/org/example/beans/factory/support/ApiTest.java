@@ -67,7 +67,7 @@ public class ApiTest {
 
     @Test
     public void test_file() throws IOException {
-        Resource resource = resourceLoader.getResource("src/main/resources/important.properties");
+        Resource resource = resourceLoader.getResource("src/test/resources/important.properties");
         InputStream inputStream = resource.getInputStream();
         String content = IoUtil.readUtf8(inputStream);
         System.out.println(content);
