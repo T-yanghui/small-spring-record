@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DAY2" />
-        <module name="DAY1" />
+        <module name="DAY8" />
         <module name="DAY7" />
         <module name="DAY6" />
         <module name="DAY5" />
         <module name="DAY4" />
+        <module name="DAY2" />
+        <module name="DAY1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,7 +23,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="DAY5" options="" />
       <module name="DAY6" options="" />
-      <module name="DAY7" options="--add-modules java.xml" />
+      <module name="DAY7" options="" />
+      <module name="DAY8" options="--add-modules java.xml" />
     </option>
   </component>
 </project>
