@@ -29,3 +29,9 @@
 ## DAY_7 完成init method方法和销毁的钩子函数
 
 主要是添加init-method 和 destroy-method的实现
+
+## DAY_8 Add marker superinterface & enable bean aware of spring framework.
+
+## DAY_9 Add FactoryBean & implement bean's scop in IOC container
+
+## DAY_10 create event and listener mechanism

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean id="userService" class="org.example.beans.factory.support.bean.UserService" scope="prototype">
+        <property name="uId" value="10001"/>
+        <property name="company" value="腾讯"/>
+        <property name="location" value="深圳"/>
+        <property name="userDao" ref="UserDaoFactoryBean"/>
+    </bean>
+
+    <bean id="UserDaoFactoryBean" class="org.example.beans.factory.support.bean.UserDaoFactoryBean"/>
+
+</beans>
