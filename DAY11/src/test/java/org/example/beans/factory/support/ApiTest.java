@@ -38,20 +38,86 @@ public class ApiTest {
 
         System.out.println(pointcut.matches(clazz));
         System.out.println(pointcut.matches(method, clazz));
+        String str = null;
+        System.out.println(str instanceof String);
+        System.out.println(str.equals("null"));
     }
 
     @Test
     public void test_dynamic() {
-        IUserService userService=new UserService();
+        IUserService userService = new UserService();
         AdvisedSupport advisedSupport = new AdvisedSupport();
         advisedSupport.setMethodMatcher(new AspectJExpressionPointcut("execution(* org.example.beans.factory.support.beans.IUserService.*(..))"));
         advisedSupport.setTargetSource(new TargetSource(userService));
         advisedSupport.setMethodInterceptor(new UserServiceIntercepter());
 
-        IUserService proxy_jdk= (IUserService) new JdkDynamicAopProxy(advisedSupport).getProxy();
-        IUserService proxy_cglib= (IUserService) new Cglib2AopProxy(advisedSupport).getProxy();
+        IUserService proxy_jdk = (IUserService) new JdkDynamicAopProxy(advisedSupport).getProxy();
+        IUserService proxy_cglib = (IUserService) new Cglib2AopProxy(advisedSupport).getProxy();
 
         System.out.println(proxy_jdk.queryUserInfo());
         System.out.println(proxy_jdk.register("Tessa"));
     }
+
+    @Test
+    public void test_solution() {
+        Solution solution = new Solution();
+        System.out.println(solution.shortestCommonSupersequence("abac", "cab"));
+    }
 }
+
+class Solution {
+    public String shortestCommonSupersequence(String str1, String str2) {
+        int length1 = str1.length(), length2 = str2.length();
+        int[][] dp = new int[length1 + 1][length2 + 1];
+        for (int i = length1 - 1; i >= 0; i--) {
+            for (int j = length2 - 1; j >= 0; j--) {
+                if (str1.charAt(i) == str2.charAt(j)) {
+                    dp[i][j] = dp[i + 1][j + 1] + 1;
+                } else {
+                    dp[i][j] = Math.max(dp[i + 1][j], dp[i][j + 1]);
+                }
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        int i = length1 - 1, j = length2 - 1;
+        while (i >= 0 || j >= 0) {
+            if (i == -1) {
+                sb.append(str2.charAt(j--));
+            } else if (j == -1) {
+                sb.append(str1.charAt(i--));
+            } else {
+                if (str1.charAt(i) == str2.charAt(j)){
+                    sb.append(str1.charAt(i));
+                    i--;
+                    j--;
+                }else if(dp[i][j]==dp[i+1][j]){
+                    sb.append(str1.charAt(i--));
+                }else{
+                    sb.append(str2.charAt(j--));
+                }
+            }
+        }
+        return sb.reverse().toString();
+    }
+}
+
+
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+

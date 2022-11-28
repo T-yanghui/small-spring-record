@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="/tmp/leetcode/editor/cn/[1092]最短公共超序列.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[1092]最短公共超序列.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1092" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[1092]最短公共超序列.java" />
+              <option name="titleSlug" value="shortest-common-supersequence" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/tmp/leetcode/editor/cn/[1306]跳跃游戏 III.java">
           <value>
             <LeetcodeEditor>
@@ -11,6 +22,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="/tmp/leetcode/editor/cn/[1306]跳跃游戏 III.java" />
               <option name="titleSlug" value="jump-game-iii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[137]只出现一次的数字 II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[137]只出现一次的数字 II.md" />
+              <option name="frontendQuestionId" value="leetcode.cn137" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[137]只出现一次的数字 II.java" />
+              <option name="titleSlug" value="single-number-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[155]最小栈.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[155]最小栈.md" />
+              <option name="frontendQuestionId" value="leetcode.cn155" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[155]最小栈.java" />
+              <option name="titleSlug" value="min-stack" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -36,6 +69,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/tmp/leetcode/editor/cn/[662]二叉树最大宽度.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[662]二叉树最大宽度.md" />
+              <option name="frontendQuestionId" value="leetcode.cn662" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[662]二叉树最大宽度.java" />
+              <option name="titleSlug" value="maximum-width-of-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/tmp/leetcode/editor/cn/[865]具有所有最深节点的最小子树.java">
           <value>
             <LeetcodeEditor>
@@ -44,6 +88,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="/tmp/leetcode/editor/cn/[865]具有所有最深节点的最小子树.java" />
               <option name="titleSlug" value="smallest-subtree-with-all-the-deepest-nodes" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[剑指 Offer 56 - I]数组中数字出现的次数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[剑指 Offer 56 - I]数组中数字出现的次数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 56 - I" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[剑指 Offer 56 - I]数组中数字出现的次数.java" />
+              <option name="titleSlug" value="shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof" />
             </LeetcodeEditor>
           </value>
         </entry>
