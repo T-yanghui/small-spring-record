@@ -37,3 +37,6 @@
 ## DAY_10 create event and listener mechanism
 
 ## DAY_11 finished AOP core implements
+## DAY_12 forgot :(
+
+## DAY_13 Accomplish Bean-Scan registry & propertyPlaceholder fill
