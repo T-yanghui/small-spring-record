@@ -40,3 +40,5 @@
 ## DAY_12 forgot :(
 
 ## DAY_13 Accomplish Bean-Scan registry & propertyPlaceholder fill
+
+## DAY_14 add 'value' 'autowire' annotation
