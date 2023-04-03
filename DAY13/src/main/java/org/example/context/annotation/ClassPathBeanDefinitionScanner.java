@@ -1,6 +1,8 @@
 package org.example.context.annotation;
 
 import cn.hutool.core.util.StrUtil;
+import com.google.common.base.Strings;
+import org.dom4j.util.StringUtils;
 import org.example.beans.factory.config.BeanDefinition;
 import org.example.beans.factory.support.BeanDefinitionRegistry;
 import org.example.stereotype.Component;
@@ -44,7 +46,7 @@ public class ClassPathBeanDefinitionScanner extends ClassPathScanningCandidateCo
         Class<?> clazz = beanDefinition.getBeanClass();
         Component component = clazz.getAnnotation(Component.class);
         String value = component.value();
-        return (value == null) ?
+        return (Strings.isNullOrEmpty(value)) ?
                 StrUtil.lowerFirst(clazz.getSimpleName()) : value;
     }
 }

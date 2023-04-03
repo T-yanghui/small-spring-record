@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DAY14/DAY14.iml" filepath="$PROJECT_DIR$/DAY14/DAY14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DAY15.iml" filepath="$PROJECT_DIR$/DAY15.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/small-spring-record.iml" filepath="$PROJECT_DIR$/.idea/small-spring-record.iml" />
     </modules>
   </component>

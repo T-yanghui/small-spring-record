@@ -1,6 +1,8 @@
 package org.example.context.annotation;
 
 import cn.hutool.core.util.StrUtil;
+import com.google.common.base.Strings;
+import org.example.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;
 import org.example.beans.factory.config.BeanDefinition;
 import org.example.beans.factory.support.BeanDefinitionRegistry;
 import org.example.stereotype.Component;
@@ -26,14 +28,15 @@ public class ClassPathBeanDefinitionScanner extends ClassPathScanningCandidateCo
             Set<BeanDefinition> candidate = findCandidateComponents(basePackage);
             for (BeanDefinition beanDefinition : candidate) {
                 String beanScope = resolveBeanScope(beanDefinition);
-                if (StrUtil.isNotEmpty(beanScope)) {
+                if (!Strings.isNullOrEmpty(beanScope)) {
                     beanDefinition.setScope(beanScope);
                 }
                 registry.registerBeanDefinition(determineBeanName(beanDefinition), beanDefinition);
             }
         }
+        //注册处理注解@Autowire和@Value的 AutoWiredAnnotationBeanPostProcessor
+        registry.registerBeanDefinition("AutowiredAnnotationBeanPostProcessor",new BeanDefinition(AutowiredAnnotationBeanPostProcessor.class));
     }
-
     private String resolveBeanScope(BeanDefinition beanDefinition) {
         Class<?> beanClass = beanDefinition.getBeanClass();
         Scope scope = beanClass.getAnnotation(Scope.class);
@@ -44,7 +47,7 @@ public class ClassPathBeanDefinitionScanner extends ClassPathScanningCandidateCo
         Class<?> clazz = beanDefinition.getBeanClass();
         Component component = clazz.getAnnotation(Component.class);
         String value = component.value();
-        return (value == null) ?
+        return (Strings.isNullOrEmpty(value)) ?
                 StrUtil.lowerFirst(clazz.getSimpleName()) : value;
     }
 }

@@ -1,6 +1,7 @@
 package org.example.test.bean;
 
 import org.example.beans.factory.annotation.Autowired;
+import org.example.beans.factory.annotation.Value;
 import org.example.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
@@ -14,6 +15,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Component("userService")
 public class UserService implements IUserService {
+    @Value("${token}")
     private String token;
     @Autowired
     private UserDao userDao;

@@ -42,3 +42,5 @@
 ## DAY_13 Accomplish Bean-Scan registry & propertyPlaceholder fill
 
 ## DAY_14 add 'value' 'autowire' annotation
+
+## DAY_15 apply properties to proxy_object 

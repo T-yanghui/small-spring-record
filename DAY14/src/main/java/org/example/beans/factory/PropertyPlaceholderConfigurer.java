@@ -49,7 +49,7 @@ public class PropertyPlaceholderConfigurer implements BeanFactoryPostProcessor {
             }
             //add stringResolver to container
             StringValueResolver valueResolver=new PlaceholderResolvingStringValueResolver(properties);
-
+            beanFactory.addEmbeddedResolver(valueResolver);
         } catch (IOException ex) {
             throw new BeansException("Could not load properties", ex);
         }
