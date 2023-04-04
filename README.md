@@ -44,3 +44,5 @@
 ## DAY_14 add 'value' 'autowire' annotation
 
 ## DAY_15 apply properties to proxy_object 
+
+## DAY_16 Three level cache
