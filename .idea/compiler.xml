@@ -20,11 +20,13 @@
         <module name="DAY4" />
         <module name="DAY2" />
         <module name="DAY1" />
-        <module name="DAY16" />
         <module name="DAY15" />
+        <module name="DAY17" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="DAY16 (1)" target="11" />
+      <module name="DAY16 (2)" target="11" />
       <module name="DAY2+3" target="11" />
     </bytecodeTargetLevel>
   </component>
